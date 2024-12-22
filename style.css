@@ -170,3 +170,19 @@ footer {
     font-size: 0.9rem;
     border-radius: 5px;
 }
+
+.logout {
+    display: flex;
+    justify-content: center;
+}
+
+.logoutButton {
+    margin-top: 20px;
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+}
+
+.logoutButton:hover {
+    background-color: #2980b9;
+}

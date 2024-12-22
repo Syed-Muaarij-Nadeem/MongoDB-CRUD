@@ -106,6 +106,24 @@ $(document).ready(function () {
         }
     });
 
+    $(document).ready(function () {
+        $('#logoutButton').on('click', function () {
+            $.ajax({
+                url: '/logout',
+                type: 'GET',
+                success: function () {
+                    window.location.href = '/login';
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error logging out:', error);
+                }
+            });
+        });
+    });
+
+
     // Fetch employees on page load
     fetchEmployees();
 });
+
+
